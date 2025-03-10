@@ -69,18 +69,26 @@ textarea:focus {
   margin: 20px 0;
   font-size: 1.2rem;
 }
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 20px auto;
+  }
 
-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background: #ff0099;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
+  h1 {
+    font-size: 2rem;
+  }
 
-button:hover {
-  background: #e60088;
+  textarea {
+    height: 150px;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
 }
